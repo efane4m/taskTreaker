@@ -1,11 +1,16 @@
-<template>
-  <h1>TaskTreaker</h1>
-</template>
-
 <script setup>
-
+import HomeButton from './components/HomeButton.vue'
+import ProfileButton from './components/ProfileButton.vue'
+import FaqButton from './components/FaqButton.vue'
+import MyTasks from './components/MyTasksButton.vue'
 </script>
 
-
-<style scoped>
-</style>
+<template>
+    <div class="header">
+        <HomeButton />
+        <ProfileButton />
+        <FaqButton />
+        <MyTasks />
+    </div>
+    <router-view />
+</template>
